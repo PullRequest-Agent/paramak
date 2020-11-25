@@ -39,11 +39,13 @@ class ToroidalFieldCoilPrincetonD(ExtrudeMixedShape):
         with_inner_leg=True,
         stp_filename="ToroidalFieldCoilPrincetonD.stp",
         stl_filename="ToroidalFieldCoilPrincetonD.stl",
+        name="outer_tf_coil",
         material_tag="outer_tf_coil_mat",
         **kwargs
     ):
 
         super().__init__(
+            name=name,
             distance=distance,
             stp_filename=stp_filename,
             stl_filename=stl_filename,

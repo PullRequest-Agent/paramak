@@ -30,11 +30,13 @@ class InboardFirstwallFCCS(RotateMixedShape):
         thickness,
         stp_filename="InboardFirstwallFCCS.stp",
         stl_filename="InboardFirstwallFCCS.stl",
+        name="firstwall",
         material_tag="firstwall_mat",
         **kwargs
     ):
 
         super().__init__(
+            name=name,
             stp_filename=stp_filename,
             stl_filename=stl_filename,
             material_tag=material_tag,

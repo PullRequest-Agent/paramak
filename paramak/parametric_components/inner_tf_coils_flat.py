@@ -33,6 +33,7 @@ class InnerTfCoilsFlat(ExtrudeStraightShape):
         azimuth_start_angle=0.0,
         stp_filename="InnerTfCoilsFlat.stp",
         stl_filename="InnerTfCoilsFlat.stl",
+        name="inner_tf_coils",
         material_tag="inner_tf_coil_mat",
         workplane="XY",
         rotation_axis="Z",
@@ -40,6 +41,7 @@ class InnerTfCoilsFlat(ExtrudeStraightShape):
     ):
 
         super().__init__(
+            name=name,
             distance=height,
             stp_filename=stp_filename,
             stl_filename=stl_filename,

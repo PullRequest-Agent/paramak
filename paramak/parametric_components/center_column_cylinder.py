@@ -23,11 +23,13 @@ class CenterColumnShieldCylinder(RotateStraightShape):
         outer_radius,
         stp_filename="CenterColumnShieldCylinder.stp",
         stl_filename="CenterColumnShieldCylinder.stl",
+        name="center_column,"
         material_tag="center_column_shield_mat",
         **kwargs
     ):
 
         super().__init__(
+            name=name,
             material_tag=material_tag,
             stp_filename=stp_filename,
             stl_filename=stl_filename,

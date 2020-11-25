@@ -23,11 +23,13 @@ class PoloidalFieldCoilCaseFC(RotateStraightShape):
         casing_thickness,
         stp_filename="PoloidalFieldCoilCaseFC.stp",
         stl_filename="PoloidalFieldCoilCaseFC.stl",
+        name="pf_coils",
         material_tag="pf_coil_case_mat",
         **kwargs
     ):
 
         super().__init__(
+            name=name,
             material_tag=material_tag,
             stp_filename=stp_filename,
             stl_filename=stl_filename,

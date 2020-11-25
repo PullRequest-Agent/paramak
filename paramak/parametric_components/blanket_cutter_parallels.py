@@ -44,6 +44,7 @@ class BlanketCutterParallels(ExtrudeStraightShape):
     ):
 
         super().__init__(
+            name=name,
             distance=gap_size / 2.0 + thickness,
             azimuth_placement_angle=azimuth_placement_angle,
             stp_filename=stp_filename,

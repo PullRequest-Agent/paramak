@@ -65,11 +65,13 @@ class BlanketFP(RotateMixedShape):
         num_points=50,
         stp_filename="BlanketFP.stp",
         stl_filename="BlanketFP.stl",
+        name="blanket",
         material_tag="blanket_mat",
         **kwargs
     ):
 
         super().__init__(
+            name=name,
             material_tag=material_tag,
             stp_filename=stp_filename,
             stl_filename=stl_filename,

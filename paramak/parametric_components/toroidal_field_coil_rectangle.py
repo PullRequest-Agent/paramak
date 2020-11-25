@@ -37,11 +37,13 @@ class ToroidalFieldCoilRectangle(ExtrudeStraightShape):
         with_inner_leg=True,
         stp_filename="ToroidalFieldCoilRectangle.stp",
         stl_filename="ToroidalFieldCoilRectangle.stl",
+        name="outer_tf_coil",
         material_tag="outer_tf_coil_mat",
         **kwargs
     ):
 
         super().__init__(
+            name=name,
             distance=distance,
             stp_filename=stp_filename,
             stl_filename=stl_filename,

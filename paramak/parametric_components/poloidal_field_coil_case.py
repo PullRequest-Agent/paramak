@@ -26,11 +26,13 @@ class PoloidalFieldCoilCase(RotateStraightShape):
         center_point,
         stp_filename="PoloidalFieldCoilCase.stp",
         stl_filename="PoloidalFieldCoilCase.stl",
+        name="pf_coils",
         material_tag="pf_coil_case_mat",
         **kwargs
     ):
 
         super().__init__(
+            name=name,
             material_tag=material_tag,
             stp_filename=stp_filename,
             stl_filename=stl_filename,

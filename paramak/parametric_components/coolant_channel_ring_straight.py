@@ -31,6 +31,7 @@ class CoolantChannelRingStraight(ExtrudeCircleShape):
         ring_radius,
         stp_filename="CoolantChannelRingStraight.stp",
         stl_filename="CoolantChannelRingStraight.stl",
+        name="coolant_channel_ring",
         material_tag="coolant_channel_mat",
         **kwargs
     ):

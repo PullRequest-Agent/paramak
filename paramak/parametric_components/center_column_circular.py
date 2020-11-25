@@ -36,6 +36,7 @@ class CenterColumnShieldCircular(RotateMixedShape):
     ):
 
         super().__init__(
+            name=name,
             material_tag=material_tag,
             stp_filename=stp_filename,
             stl_filename=stl_filename,

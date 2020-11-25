@@ -30,11 +30,13 @@ class BlanketConstantThicknessArcH(RotateMixedShape):
         thickness,
         stp_filename="BlanketConstantThicknessArcH.stp",
         stl_filename="BlanketConstantThicknessArcH.stl",
+        name="blanket_constant_thickness",
         material_tag="blanket_mat",
         **kwargs
     ):
 
         super().__init__(
+            name=name,
             material_tag=material_tag,
             stp_filename=stp_filename,
             stl_filename=stl_filename,

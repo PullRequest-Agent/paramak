@@ -43,10 +43,12 @@ class CenterColumnShieldPlasmaHyperbola(RotateMixedShape):
         material_tag="center_column_shield_mat",
         stp_filename="CenterColumnShieldPlasmaHyperbola.stp",
         stl_filename="CenterColumnShieldPlasmaHyperbola.stl",
+        name="center_column",
         **kwargs
     ):
 
         super().__init__(
+            name=name,
             material_tag=material_tag,
             stp_filename=stp_filename,
             stl_filename=stl_filename,

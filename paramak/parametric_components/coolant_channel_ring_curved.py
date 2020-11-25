@@ -37,6 +37,7 @@ class CoolantChannelRingCurved(SweepCircleShape):
         mid_offset,
         stp_filename="CoolantChannelRingCurved.stp",
         stl_filename="CoolantChannelRingCurved.stl",
+        name="coolant_channel_ring",
         material_tag="coolant_channel_mat",
         **kwargs
     ):
@@ -46,6 +47,7 @@ class CoolantChannelRingCurved(SweepCircleShape):
         self.height = height
 
         super().__init__(
+            name=name,
             path_points=self.path_points,
             radius=channel_radius,
             material_tag=material_tag,
